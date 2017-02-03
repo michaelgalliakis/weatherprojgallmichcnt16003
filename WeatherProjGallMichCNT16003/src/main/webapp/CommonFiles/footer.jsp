@@ -8,7 +8,7 @@
                 Π.Μ.Σ στις τεχνολογίες υπολογισμού και δικτύων.<br/>
                 Η Σελίδα δημιουργήθηκε στα πλαίσια της <b>τελευταίας εργασίας</b>, για το μάθημα: <br>
                 Κατανεμημένες Διαδικτυακές Τεχνολογίες (Διδάσκων: <b>Ανδρέας Μενύχτας</b>)<hr>
-                Εκφώνηση εργασίας <a href="workingTitle.jsp">εδώ.</a> * Όλα τα σχετικά αρχεία βρίσκονται στο <a href="https://michaelgalliakis@bitbucket.org/michaelgalliakis/weatherprojgallmichcnt16003.git">Bitbucket</a>.<br>
+                Εκφώνηση εργασίας <a href="workingTitle.jsp">εδώ.</a> * Όλα τα σχετικά αρχεία βρίσκονται στο <a href="https://bitbucket.org/michaelgalliakis/weatherprojgallmichcnt16003.git">Bitbucket</a>.<br>
                 </p></center>   
         </div>
         <div id="footer_right">
