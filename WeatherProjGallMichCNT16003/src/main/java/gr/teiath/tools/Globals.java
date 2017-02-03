@@ -8,19 +8,20 @@ public class Globals {
     
     public static ArrayList<ArrayList<String>> loadCountrieCodes()
     {
-        ClassLoader classLoader = Globals.class.getClassLoader();
-        File file = new File(classLoader.getResource("textfile/iso3166-1.txt").getFile());
         ArrayList<ArrayList<String>> arCountriesCodes = new ArrayList() ;
-        try (Scanner scanner = new Scanner(file)) {
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                String [] res = line.split("\\t+");
-                ArrayList<String> ar = new ArrayList() ;
-                ar.add(res[3].trim()) ;
-                ar.add(res[0]) ;
-                arCountriesCodes.add(ar);
-            }
-            scanner.close();
+        
+        try{
+            ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+            File file = new File(classLoader.getResource("textfile/iso3166-1.txt").getFile());
+            try (Scanner scanner = new Scanner(file)) {
+                while (scanner.hasNextLine()) {
+                    String line = scanner.nextLine();
+                    String [] res = line.split("\\t+");
+                    ArrayList<String> ar = new ArrayList() ;
+                    ar.add(res[3].trim()) ;
+                    ar.add(res[0]) ;
+                    arCountriesCodes.add(ar);
+                } }
         } catch (Exception ex) {
             ArrayList<String> ar = new ArrayList() ;
             ar.add("GR") ;
