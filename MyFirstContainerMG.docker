@@ -1,0 +1,8 @@
+FROM tomcat:latest
+RUN apt-get -y update && apt-get install -y openjdk-7-jdk maven git
+RUN git clone https://michaelgalliakis@bitbucket.org/michaelgalliakis/weatherprojgallmichcnt16003.git
+RUN cd weatherprojgallmichcnt16003/WeatherProjGallMichCNT16003/ && \
+mvn compile package && \
+mv target/WeatherProjGallMichCNT16003-1.0.war /usr/local/tomcat/webapps/
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
