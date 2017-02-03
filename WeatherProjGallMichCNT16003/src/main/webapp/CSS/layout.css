@@ -1,0 +1,332 @@
+html { 
+    background: url(../Images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black ;
+}
+body{
+    padding:0;
+    margin:0;
+    color:#000;   
+    background-repeat:repeat;
+    background-color:brown;          
+    background-position:  top;    
+}
+
+.mydiv{
+    position:relative
+}
+.mydiv img{
+    position:absolute;
+    top:0;
+    left:0;
+    padding-left: 5px ;     
+}
+
+div, h1, h2, h3, h4, p, form, label, input, textarea, img, span{
+    margin:0; padding:0;
+}
+ /* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+#container {
+    width:960px;
+    margin:0 auto;
+}
+#header{
+    width:960px;
+    height:50px;
+    float:left;
+}
+
+#logo {
+    width:362px;
+    height:58px;    
+    float:left;
+    margin-top:35px;
+    text-indent:-100px;
+}
+#middle {
+    width:960px;
+    height:100% ; 
+    min-height: 450px ;
+    float:left;
+    margin-top: 0px ;
+    text-align: center ;   
+    background-color:   rgba(255, 255, 255,0.95);
+}
+#middle_Max1 {
+    width:960px;    
+    
+    min-height: 470px;
+    height: auto;
+    margin: 80px auto 0px auto;
+    padding: 10px 10px; overflow:auto;
+    margin-top: 0px ;
+}
+#middle_inside {
+    width:950px;
+    height:340px;
+    float:left;
+    background-color: #efe6ef;
+    
+    margin:40px 0 0 0;
+    padding:10px 0 10px 10px;
+} 
+#slide {
+    width:500px;
+    height:340px;
+    float:left;    
+    background-size:contain
+}
+#slideText {
+    width:630px;
+    height:340px;
+    float:left;
+    text-align: left ;
+    background-size:contain
+}
+#quick_note {
+    width:350px;
+    height:300px;
+    float:left;
+    
+    margin-left:10px;
+    padding:10px 0 0 20px;
+}
+#quick_note h2{
+    font-family:Georgia, "Times New Roman", Times, serif;
+    margin-bottom:12px;
+}
+input, textarea {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+    color:black;
+}
+
+label {
+    
+}
+.textinput{
+    width:255px;
+    height:25px;    
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+
+.text{
+    width:150px;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:9px;
+    margin-top:5px;
+    color:#767676;
+    float:left;
+}
+
+.title{
+    color:#000;
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size:24px;
+}
+
+.color{
+    color:#000000;
+}
+
+.image{
+    float:right;
+    margin-top:5px;
+}
+
+.more a{
+    float:left;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:11px;
+    margin-top:2px;
+    color:#000;
+}
+
+.more a:hover{
+    text-decoration:none;
+}
+#footer_wrap {
+    width:100%;
+    height:100px;     
+    
+    color: #FFFFFF ;
+    float:left;
+    background-color: black;
+}
+#footer {
+    width:960px;
+    height:80px;
+    margin:0 auto;
+    padding:5px 0 0 0;
+    font-size:10px;
+    
+}
+#footer_left {
+    width:609px;
+    height:80px;
+    float:left;
+    font-family:Verdana, Geneva, sans-serif;
+    background:url(../Images/teiathLogo.png) left center no-repeat;            
+    font-size:11px;
+    line-height:15px;    
+}
+
+#footer_right {
+    width:350px;
+    height:80px;
+    float:right;    
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:11px;    
+    line-height:15px;    
+    background:url(../Images/logo48.png) right center no-repeat;    
+    color: #FFFFFF ;
+    text-align:left;
+    padding:2px 1px 0 0;
+    
+}
+#footer ul{ width:100%; margin:0;padding:0;list-style-type:none;float:left;}
+#footer ul li{float:left;margin:0 0px;}
+#footer ul li a{display:block;float:left;color:#fff;text-decoration:none;padding:0 12px 0 0;line-height:25px;}
+#footer ul li a:hover, #footer ul li a.current{color:#fff; text-decoration:underline;}
+p,
+table, caption, td, tr, th {
+    margin:0;
+    padding:0;
+    font-weight:normal;
+}
+table {
+    border-collapse:collapse;
+    margin-bottom:15px;
+    width:90%;
+}
+
+caption {
+    text-align:left;
+    font-size:15px;
+    padding-bottom:10px;
+}
+
+table td,
+table th {
+    padding:5px;
+    border:1px solid #000;
+    border-width:1px 1px 1px 1px;
+}
+
+thead th {
+    background:gray;
+}
+
+thead th[colspan],
+thead th[rowspan] {
+    background:gray;
+}
+
+tbody th,
+tfoot th {
+    text-align:left;
+    background:gray;
+}
+
+tbody td,
+tfoot td {
+    text-align:center;
+    background:#efe6ef; 
+}
+
+tfoot th {
+    background:#21fdfd;
+}
+
+tfoot td {
+    background:#21fdfd;
+    font-weight:bold;
+}
+
+tbody tr.odd td { 
+    background:#bcd9e1;
+}
+
+.find
+{
+    width: 142px;
+    height: 48px;
+    background-image: url(../Images/find-icon.png);
+    background-repeat: no-repeat ;
+    background-position:  center center;
+    background-size: 48px;
+    font-size: 16px;
+    
+}
+.resetGR
+{
+    width: 24px;
+    height: 24px;
+    background-image: url(../Images/resetGR.png);
+    background-repeat: no-repeat ;
+    background-position:  center center;
+    background-size: 24px;
+    font-size: 16px;
+    
+}
+
+#yellow {
+    background: yellow;
+    position: absolute;
+    width: 150px;
+    top: 0;
+    left: 0;
+    bottom: 155px;
+}
+
+#blue {
+    background: rgb(98, 196, 255);
+    position: absolute;
+    top: 0;
+    right: 155px;
+    left: 155px;
+    bottom: 155px;
+}
+
+#green {
+    background: green;
+    position: absolute;
+    width: 150px;
+    top: 0;
+    right: 0;
+    bottom: 155px;
+}
+
+#red {
+    background: brown;
+    position: absolute;
+    height: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#Subject{
+    font-size:12px;
+}
